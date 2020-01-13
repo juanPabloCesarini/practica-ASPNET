@@ -8,28 +8,35 @@
     <link href="css/bootstrap.css" rel="stylesheet" />
     <title>Fecha y Hora</title>
 </head>
-<body>
-    <form id="form1" runat="server">
-        <div class="container">
-            <div class="row">
-                <h1 class="Display-1 text-center">Fecha y Hora</h1>
-            </div>
-            <div class="form-group">
-                <asp:Label ID="Label1" runat="server" Text=""><h4 class="Dsiplay-4">Fecha y Hora:</h4></asp:Label>
-                <asp:Label ID="idFechaHora" runat="server" Text="Label"></asp:Label>
-            </div>
-            <div class="form-group">
-                <asp:Label ID="Label2" runat="server" Text=""><h4 class="Dsiplay-4">Dia:</h4></asp:Label>
-                <asp:Label ID="idDia" runat="server" Text="Label"></asp:Label>
-            </div>
-            <div class="form-group">
-                <asp:Label ID="Label3" runat="server" Text=""><h4 class="Dsiplay-4">Hora:</h4></asp:Label>
-                <asp:Label ID="idHora" runat="server" Text=""></asp:Label>
-            </div>
-            <div class="row">
-                <asp:HyperLink ID="idLMenu" runat="server" NavigateUrl="~/index.aspx"><h4 class="Display-4 text-center">Volver al menú</h4></asp:HyperLink>
+<body class="bg-success">
+    <div class="container well">
+    <div class="row">
+        <h1 class="Display-1 text-center">Fecha y Hora</h1>
+    </div>
+    <form runat="server" class="form-horizontal">
+        <div class="form-group">
+            <asp:Label ID="lblFecha" runat="server" Text="Fecha y Hora: " CssClass="control-label col-sm-2"></asp:Label>
+            <div class="col-sm-10">
+                <asp:TextBox ID="idFechaHora" runat="server" CssClass="form-control"></asp:TextBox>
             </div>
         </div>
+        <div class="form-group">
+            <asp:Label ID="lblDia" runat="server" Text="Dia: " CssClass="control-label col-sm-2"></asp:Label>
+            <div class="col-sm-10">
+                <asp:TextBox ID="idDia" runat="server" CssClass="form-control"></asp:TextBox>
+            </div>
+        </div>
+        <div class="form-group">
+            <asp:Label ID="Label1" runat="server" Text="Hora: " CssClass="control-label col-sm-2"></asp:Label>
+            <div class="col-sm-10">
+                <asp:TextBox ID="idHora" runat="server" CssClass="form-control"></asp:TextBox>
+            </div>
+        </div>
+        
     </form>
+    <div class="row">
+        <asp:HyperLink ID="volver" runat="server" NavigateUrl="~/index.aspx"><h4 class="Display-4 text-center">Menu</h4></asp:HyperLink>
+    </div>
+    </div>
 </body>
 </html>

@@ -8,9 +8,9 @@
     <link href="css/bootstrap.css" rel="stylesheet" />
     <title>Menu</title>
 </head>
-<body>
+<body class="bg-success">
     <form id="form1" runat="server">
-        <div class="container">
+        <div class="container well">
             <div class="row">
                 <h1 class="Display-1 text-center">Menu</h1>
             </div>
