@@ -1,0 +1,88 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="pmPPAL.master.cs" Inherits="fullstack.pmPPAL" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/estilos.css" rel="stylesheet" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+       	<div class="row">
+               <header>
+
+				<div class="fondoTitulo col col-md-9">
+					<h1 class="display-2 text-center">sugarAPP</h1>
+            		<h4 class="display-4 text-center">La aplicación que necesitabas</h4>
+				</div>
+				<div class=" fondoBotonera col col-md-3">
+		            <button type="button" class="d-inline btn btn-violeta" id="abrirIngreso"onclick="this.blur()">Mi sugarAPP
+		            </button>
+  					<button type="button" class="d-inline btn btn-violeta" id="abrirRecuperarContras" 
+  						    onclick="this.blur()">Olvidé mi contraseña
+  					</button>
+  					<button type="button" class="d-inline btn btn-violeta" id="abrirVentanaForm" 
+  							onclick="this.blur()">Primera vez
+  					</button>
+                    <button type="button" class="d-inline btn btn-violeta2" onclick="this.blur()">Contacto
+                    </button>
+                </div>
+		    </div>
+		</header>
+		<div class="row">
+			<nav class=" nav navbar navbar-expand-lg navbar-light ">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                       <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                         <li class="nav-item active">
+                            <a class="nav-link" href="#">Inicio<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Consulta de mediciones</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                 <a class="dropdown-item" href="#">Diaria</a>
+                                 <a class="dropdown-item" href="#">Semanal</a>
+                                 <a class="dropdown-item" href="#">Mensual</a>
+                                 <a class="dropdown-item" href="#">Anual</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">GPS gastronómico</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Novedades</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                 <a class="dropdown-item" href="#">Dieta</a>
+                                 <a class="dropdown-item" href="#">Gimnasia</a>
+                                 <a class="dropdown-item" href="#">Farmacia</a>
+                                    <div class="dropdown-divider"></div>
+                                         <a class="dropdown-item" href="#">Favoritos</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+		</div>
+            
+           <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <footer>
+                <p class="text-center">Datos de la empresa</p>
+            </footer>
+        </div>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

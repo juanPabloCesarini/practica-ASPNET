@@ -1,0 +1,25 @@
+﻿* {
+    margin:0;
+    padding:0;
+}
+body{
+    background-color:aquamarine;
+}
+header{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 80px;
+}
+main{
+    background-color:blueviolet;
+    color: white;
+    width: 100%;
+    height: 400px;
+}
+footer{
+    background-color: black;
+    color: whitesmoke;
+    width: 100%;
+    height: 80px;
+}
